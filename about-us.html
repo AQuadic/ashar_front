@@ -12,6 +12,20 @@
     <link rel="stylesheet" href="assets/css/lib/all.min.css">
     <link rel="stylesheet" href="assets/css/lib/animate.css">
     <link rel="stylesheet" href="assets/css/lib/bootstrap.css" />
+        <script>
+        function switchLang() {
+            if (document.dir == 'ltr') {
+                const link = document.createElement('link');
+                link.setAttribute('href', 'assets/css/lib/bootstrap-rtl.min.css');
+                link.setAttribute('id', 'rtl-lang');
+                document.body.appendChild(link);
+                document.dir = 'rtl';
+            } else {
+                document.getElementById('rtl-lang').remove();
+                document.dir = 'ltr';
+            }
+        }
+    </script>
     <!-- <link rel="stylesheet" href="assets/css/lib/bootstrap-rtl.min.css" /> -->
     <link rel="stylesheet" href="assets/css/lib/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
@@ -114,7 +128,7 @@
             </div>
 
             <div class="lang-contain">
-              <a href="#" class="lang">
+              <a href="#" class="lang" onclick="switchLang()">
                 العربية
               </a>
 
