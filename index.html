@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/lib/all.min.css">
     <link rel="stylesheet" href="assets/css/lib/animate.css">
     <link rel="stylesheet" href="assets/css/lib/bootstrap.css" />
-        <script>
+        <!-- <script>
         function switchLang() {
             if (document.dir == 'ltr') {
                 const link = document.createElement('link');
@@ -25,7 +25,7 @@
                 document.dir = 'ltr';
             }
         }
-    </script>
+    </script> -->
     <!-- <link id="rtl-lang" rel="stylesheet" href="assets/css/lib/bootstrap-rtl.min.css" /> -->
     <link rel="stylesheet" href="assets/css/lib/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
@@ -329,24 +329,40 @@
       <li>
         <a href="#" type="button" data-toggle="modal" data-target="#locationModal">
           <img class="filter" src="assets/images/mobile_nav/location.svg" alt="">
+
+          <span>
+            Egypt
+          </span>
         </a>
       </li>
 
       <li>
         <a href="#" type="button" data-toggle="modal" data-target="#searchModal">
           <img class="filter" src="assets/images/mobile_nav/search.svg" alt="">
+
+          <span>
+            Search
+          </span>
         </a>
       </li>
 
       <li>
         <a href="/login.html">
           <img class="filter" src="assets/images/mobile_nav/login.svg" alt="">
+
+          <span>
+            Login
+          </span>
         </a>
       </li>
 
       <li>
         <a href="#" onclick="switchLang()">
           <img src="assets/images/mobile_nav/arabic.png" alt="">
+
+          <span>
+            arabic
+          </span>
         </a>
       </li>
     </ul>
@@ -491,6 +507,12 @@
             <h1>
               More Mobile
             </h1>
+          </div>
+
+          <div class="loader-data">
+            <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+              <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+            </svg>
           </div>
 
           <div class="row">
@@ -1144,7 +1166,7 @@
           </div>
 
           <div class="col-lg-4 col-12 mb-4">
-            <div class="content">
+            <div class="content padding-contain">
               <div class="heading">
                 <h1>
                   Categories
@@ -1186,7 +1208,7 @@
           </div>
 
           <div class="col-lg-4 col-12 mb-4">
-            <div class="content">
+            <div class="content padding-contain">
               <div class="heading">
                 <h1>
                   Pages
@@ -1229,6 +1251,12 @@
         </div>
       </div>
     </footer>
+
+    <div class="loader">
+      <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+      </svg>
+    </div>
 
     <script src="assets/js/lib/jquery4.js"></script>
     <script src="assets/js/lib/popper.js"></script>

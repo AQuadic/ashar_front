@@ -178,7 +178,7 @@ html[dir="rtl"] {
 
     .head {
       font-size: 15px;
-      font-weight: 700;
+      font-weight: 500;
       color: var(--dark-color);
       display: flex;
       margin-bottom: 14px;
@@ -193,7 +193,7 @@ html[dir="rtl"] {
       p {
         color: var(--dark-color);
         font-size: 18px;
-        font-weight: 900;
+        font-weight: 500;
         margin: 0px;
         width: fit-content;
       }
@@ -236,7 +236,7 @@ html[dir="rtl"] {
 
   h1 {
     font-size: 35px;
-    font-weight: 900;
+    font-weight: 500;
     color: var(--dark-color);
     margin: 0px;
   }
@@ -405,7 +405,7 @@ html[dir="rtl"] {
 
         .lang {
           font-size: 15px;
-          font-weight: 700;
+          font-weight: 500;
           color: var(--dark-color);
 
           &:hover {
@@ -781,7 +781,7 @@ html[dir="rtl"] {
     h1 {
       color: var(--primary-color);
       font-size: 20px;
-      font-weight: 900;
+      font-weight: 500;
       margin-bottom: 20px;
     }
 
@@ -820,23 +820,31 @@ html[dir="rtl"] {
 
   li {
     a {
-      width: 40px;
-      height: 40px;
-      background-color: var(--primary-color);
+      width: fit-content;
+      padding: 3px 5px;
       display: flex;
       align-content: center;
       align-items: center;
       justify-content: center;
       border-radius: 4px;
+      background-color: rgba($color: #F15921, $alpha: 0.8);
+      
 
       img {
-        width: 24px;
-        height: 24px;
+        width: 16px;
+        height: 16px;
         object-fit: contain;
+        margin-inline-end: 5px;
 
         &.filter {
           filter: var(--light-filter);
         }
+      }
+
+      span {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--light-color);
       }
     }
   }
@@ -856,14 +864,14 @@ header {
 
     h1 {
       font-size: 40px;
-      font-weight: 900;
+      font-weight: 500;
       color: var(--dark-color);
       margin-bottom: 30px;
 
       span {
         color: var(--primary-color);
         font-size: 40px;
-        font-weight: 900
+        font-weight: 500
       }
     }
 
@@ -1043,14 +1051,14 @@ header {
 
     h1 {
       font-size: 40px;
-      font-weight: 900;
+      font-weight: 500;
       color: var(--dark-color);
       margin-bottom: 30px;
 
       span {
         color: var(--primary-color);
         font-size: 40px;
-        font-weight: 900
+        font-weight: 500;
       }
     }
 
@@ -1144,7 +1152,7 @@ header {
     h1 {
       color: var(--primary-color);
       font-size: 25px;
-      font-weight: 900;
+      font-weight: 500;
       margin: 0px;
     }
   }
@@ -1180,7 +1188,7 @@ header {
       h1 {
         color: var(--primary-color);
         font-size: 22px;
-        font-weight: 900;
+        font-weight: 500;
         margin-bottom: 20px;
       }
 
@@ -1236,7 +1244,7 @@ header {
       h1 {
         color: var(--dark-color);
         font-size: 25px;
-        font-weight: 900;
+        font-weight: 500;
       }
     }
 
@@ -1288,7 +1296,7 @@ header {
 
       label {
         font-size: 15px;
-        font-weight: 700;
+        font-weight: 500;
         display: block;
         margin-bottom: 10px;
         color: var(--dark-color);
@@ -1339,12 +1347,12 @@ header {
       text-align: center;
       margin-top: 20px;
       font-size: 20px;
-      font-weight: 700;
+      font-weight: 500;
 
       span {
         color: var(--primary-color);
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 500;
         margin-inline-start: 10px;
       }
     }
@@ -1363,7 +1371,7 @@ header {
         h2 {
           color: var(--dark-color);
           font-size: 25px;
-          font-weight: 900;
+          font-weight: 500;
           margin-bottom: 15px;
         }
 
@@ -1479,7 +1487,7 @@ header {
       h2 {
         color: var(--primary-color);
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 500;
         margin: 0px;
       }
     }
@@ -1505,7 +1513,7 @@ header {
         color: var(--dark-color);
         font-size: 18px;
         margin: 0px !important;
-        font-weight: 700;
+        font-weight: 500;
         text-align: center;
         padding: 15px 0px;
         background-color: var(--light-color);
@@ -1533,7 +1541,7 @@ header {
 
       label {
         font-size: 15px;
-        font-weight: 700;
+        font-weight: 500;
         display: block;
         margin-bottom: 10px;
         color: var(--dark-color);
@@ -1599,6 +1607,9 @@ header {
     border: 2px solid rgba($color: #F15921, $alpha: 0.5);
     border-radius: 10px;
     cursor: pointer;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 
     input {
       display: none;
@@ -1626,7 +1637,7 @@ header {
       top: 10px;
       right: 20px;
       z-index: 9;
-      display: flex;
+      display: none;
 
       img {
         width: 100%;
@@ -1735,7 +1746,7 @@ header {
       h1 {
         color: var(--dark-color);
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 500;
         margin: 0px;
       }
     }
@@ -1749,7 +1760,7 @@ header {
       h2 {
         color: var(--light-color);
         font-size: 18px;
-        font-weight: 700;
+        font-weight: 500;
         margin: 0px;
       }
     }
@@ -1777,7 +1788,7 @@ header {
         .name {
           color: var(--primary-color);
           font-size: 15px;
-          font-weight: 700;
+          font-weight: 500;
           margin-inline-end: 15px;
         }
 
@@ -1808,7 +1819,7 @@ header {
 
       .head {
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 500;
         color: var(--dark-color);
         margin: 0px;
 
@@ -1896,7 +1907,7 @@ header {
 
         h3 {
           font-size: 15px;
-          font-weight: 700;
+          font-weight: 500;
           color: var(--primary-color);
           margin-bottom: 10px;
         }
@@ -1965,6 +1976,11 @@ footer {
 
   .content {
     width: 100%;
+    
+    &.padding-contain {
+      padding-inline-start: 100px;
+    }
+
     .brand-name img {
       width: 120px;
       height: 100px;
@@ -2025,6 +2041,52 @@ footer {
         }
       }
     }
+  }
+}
+
+.loader-data {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  
+  .spinner {
+    animation: rotator 1.4s linear infinite;
+  }
+  .path {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    animation:
+      dash 1.4s ease-in-out infinite, 
+      colors (1.4s*4) ease-in-out infinite;
+  }
+}
+
+.loader {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999999; 
+  background-color: var(--dark-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  
+  .spinner {
+    animation: rotator 1.4s linear infinite;
+  }
+  .path {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    transform-origin: center;
+    animation:
+      dash 1.4s ease-in-out infinite, 
+      colors (1.4s*4) ease-in-out infinite;
   }
 }
 

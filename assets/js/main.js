@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $('.loader').fadeOut(10000);
+
     $(window).scroll(function () {
         if ($(this).scrollTop() > 700) {
             $(".scroll-top-button").fadeIn();
@@ -80,4 +82,25 @@ $(document).ready(function () {
             swiper: swiper,
         },
     });
+
+    // const image_Input = document.querySelector('.file-upload');
+    // var ulpoadedImage = "";
+    // image_Input.addEventListener("change", function() {
+    //     const reader = new FileReader();
+    //     reader.addEventListener("load", function() {
+    //         ulpoadedImage = reader.result;
+    //         document.querySelector(".upload-image").style.backgroundImage = `url(${ulpoadedImage})`
+    //         document.querySelector(".upload-image .close").style.display = "flex"
+    //         document.querySelector(".upload-image .contain img").style.display = "none"
+    //     });
+    //     reader.readAsDataURL(this.files[0]);
+    //     console.log('done')
+    // })
+
+    // $(".close").click(function(){
+    //     $(this).parent("#uploadImage").style.backgroundImage = 'none'
+    // });
+
 });
+
+
