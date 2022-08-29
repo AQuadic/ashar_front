@@ -420,6 +420,51 @@ html[dir="rtl"] {
     }
   }
 
+  .login-list {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: 0px 15px;
+
+    li {
+      margin-inline-end: 10px;
+
+      &:last-child {
+        margin-inline-end: 0px;
+      }
+
+      a {
+        width: 25px;
+        height: 25px;
+        display: flex;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+
+          &.user {
+            border-radius: 50%;
+            outline: 1px solid var(--primary-color);
+          }
+        }
+
+        &:hover img {
+          animation: tada .2s linear both;
+        }
+      }
+    }
+  }
+
+  .nav-item {
+    margin-inline-end: 30px;
+    .nav-link {
+      color: var(--primary-color);
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
   .drop-list-shape {
     position: relative;
 
@@ -533,6 +578,8 @@ html[dir="rtl"] {
     .navbar-nav {
       flex-direction: row !important;
       justify-content: center;
+      align-items: center;
+      align-content: center;
 
       .drop-list-shape {
         margin-inline-end: 30px;

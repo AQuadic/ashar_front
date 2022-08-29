@@ -1477,6 +1477,48 @@ html[dir=rtl] .selling .selling-list li a::before {
 .navbar .top-nav .content .lang-contain .custom-btn.border-btn {
   margin: 0px 10px;
 }
+.navbar .login-list {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  margin: 0px 15px;
+}
+.navbar .login-list li {
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+.navbar .login-list li:last-child {
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+.navbar .login-list li a {
+  width: 25px;
+  height: 25px;
+  display: flex;
+}
+.navbar .login-list li a img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.navbar .login-list li a img.user {
+  border-radius: 50%;
+  outline: 1px solid var(--primary-color);
+}
+.navbar .login-list li a:hover img {
+  -webkit-animation: tada 0.2s linear both;
+          animation: tada 0.2s linear both;
+}
+.navbar .nav-item {
+  -webkit-margin-end: 30px;
+          margin-inline-end: 30px;
+}
+.navbar .nav-item .nav-link {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 500;
+}
 .navbar .drop-list-shape {
   position: relative;
 }
@@ -1576,6 +1618,8 @@ html[dir=rtl] .selling .selling-list li a::before {
 .navbar .bottom-nav .navbar-nav {
   flex-direction: row !important;
   justify-content: center;
+  align-items: center;
+  align-content: center;
 }
 .navbar .bottom-nav .navbar-nav .drop-list-shape {
   -webkit-margin-end: 30px;
