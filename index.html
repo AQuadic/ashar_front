@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr">
+<html dir="rtl">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="....">
@@ -8,32 +8,12 @@
     <title>
       Eshhaar
     </title>
-    <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x
+    -icon"/>
     <link rel="stylesheet" href="assets/css/lib/all.min.css">
     <link rel="stylesheet" href="assets/css/lib/animate.css">
-    <link id="ltr-lang" rel="stylesheet" href="assets/css/lib/bootstrap.css" />
-    <script>
-        function switchLang() {
-            if (document.dir == 'ltr') {
-                const link = document.createElement('link');
-                link.setAttribute('href', 'assets/css/lib/bootstrap-rtl.min.css');
-                link.setAttribute('id', 'rtl-lang');
-                link.setAttribute('rel', 'stylesheet');
-                document.head.appendChild(link);
-                document.getElementById('ltr-lang').remove();
-                document.dir = 'rtl';
-            } else {
-              const link = document.createElement('link');
-              link.setAttribute('href', 'assets/css/lib/bootstrap.css');
-              link.setAttribute('id', 'ltr-lang');
-              link.setAttribute('rel', 'stylesheet');
-              document.head.appendChild(link);
-              document.getElementById('rtl-lang').remove();
-              document.dir = 'ltr';
-            }
-        }
-    </script>
-    <!-- <link id="rtl-lang" rel="stylesheet" href="assets/css/lib/bootstrap-rtl.min.css" /> -->
+    <!-- <link id="ltr-lang" rel="stylesheet" href="assets/css/lib/bootstrap.css" /> -->
+    <link id="rtl-lang" rel="stylesheet" href="assets/css/lib/bootstrap-rtl.min.css" />
     <link rel="stylesheet" href="assets/css/lib/swiper.min.css" />
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
@@ -128,9 +108,9 @@
   
                 <input type="text" class="form-control" placeholder="Search For Cars" />
                 
-                <a href="/ads.html" class="search-btn">
+                <button type="submit" class="search-btn">
                   <img src="assets/images/navbar/search.svg" loading="lazy" alt="">
-                </a>
+                </button>
               </form>
             </div>
 
@@ -152,10 +132,72 @@
                   </a>
                 </li>
 
-                <li>
+                <li class="drop-list-shape user-list">
                   <a href="#">
                     <img src="assets/images/user.svg" class="user" alt="">
                   </a>
+
+                  <ul class="list profile-list">
+                    <li class="name">
+                      <div class="image-content">
+                        <img src="assets/images/user.svg" alt="">
+                      </div>
+
+                      <div class="contain">
+                        <h1>
+                          Hi
+                        </h1>
+
+                        <h2>
+                          Ashar
+                        </h2>
+
+                        <a href="#">
+                          view and edit your profile
+                        </a>
+                      </div>
+                    </li>
+
+                    <li class="list-contain">
+                      <a href="#" class="data">
+                        <img src="assets/images/ads.svg" alt="">
+
+                        <span>
+                          My Ads
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="list-contain">
+                      <a href="#" class="data">
+                        <img src="assets/images/blog.svg" alt="">
+
+                        <span>
+                          Blog
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="list-contain">
+                      <a href="#" class="data">
+                        <img src="assets/images/help.svg" alt="">
+
+                        <span>
+                          Help
+                        </span>
+                      </a>
+                    </li>
+
+                    <li class="list-contain">
+                      <a href="#">
+                        <img src="assets/images/logout.svg" alt="">
+
+                        <span>
+                          Logout
+                        </span>
+                      </a>
+                    </li>
+                  </ul>
                 </li>
               </ul>
 
@@ -374,11 +416,11 @@
       </li>
 
       <li>
-        <a href="/login.html">
-          <img class="filter" src="assets/images/mobile_nav/login.svg" alt="">
+        <a href="#" type="button" data-toggle="modal" data-target="#userModal">
+          <img src="assets/images/user.svg" alt="">
 
           <span>
-            Login
+            user name
           </span>
         </a>
       </li>
@@ -478,6 +520,77 @@
               <li>
                 <a href="#">
                   kuwait
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--mobile loaction-->
+    <div class="modal fade" id="userModal" tabindex="-1" aria-labelledby="userModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <ul class="region-data">
+              <li class="name">
+                <div class="image-content">
+                  <img src="assets/images/user.svg" alt="">
+                </div>
+
+                <div class="contain">
+                  <h1>
+                    Hi
+                  </h1>
+
+                  <h2>
+                    Ashar
+                  </h2>
+
+                  <a href="#">
+                    view and edit your profile
+                  </a>
+                </div>
+              </li>
+
+              <li>
+                <a>
+                  <img src="assets/images/ads.svg" alt="">
+
+                  <span>
+                    My Ads
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a>
+                  <img src="assets/images/blog.svg" alt="">
+
+                  <span>
+                    Blog
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a>
+                  <img src="assets/images/help.svg" alt="">
+
+                  <span>
+                    Help
+                  </span>
+                </a>
+              </li>
+
+              <li>
+                <a>
+                  <img src="assets/images/logout.svg" alt="">
+
+                  <span>
+                    Logout
+                  </span>
                 </a>
               </li>
             </ul>

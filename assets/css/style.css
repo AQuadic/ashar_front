@@ -1118,7 +1118,17 @@ button {
   --light-filter: invert(100%) sepia(0%) saturate(7445%) hue-rotate(134deg) brightness(121%) contrast(112%);
 }
 
+button {
+  outline: none;
+  border: 0px;
+}
+button:hover, button:focus, button:active {
+  outline: none;
+}
+
 html[dir=rtl] .drop-name::after,
+html[dir=rtl] .modal-body .region-data li a::after,
+html[dir=rtl] .navbar .drop-list-shape .list li a::after,
 html[dir=rtl] .drop-list-shape .list .item a::after {
   left: 0px;
   right: unset !important;
@@ -1477,6 +1487,115 @@ html[dir=rtl] .selling .selling-list li a::before {
 .navbar .top-nav .content .lang-contain .custom-btn.border-btn {
   margin: 0px 10px;
 }
+.navbar .drop-list-shape {
+  position: relative;
+}
+.navbar .drop-list-shape.user-list .list {
+  width: 280px;
+}
+.navbar .drop-list-shape .list {
+  padding: 10px 10px;
+  background-color: var(--light);
+  box-shadow: 0px 0px 10px rgba(241, 89, 33, 0.2);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(20px);
+  visibility: hidden;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+.navbar .drop-list-shape .list li {
+  width: 100%;
+  padding: 10px 0px;
+  border-bottom: 1px solid var(--seconday-color);
+}
+.navbar .drop-list-shape .list li:last-child {
+  border-bottom: 0px !important;
+}
+.navbar .drop-list-shape .list li a {
+  width: 100%;
+  display: flex !important;
+  position: relative;
+  color: var(--dark);
+  font-size: 15px;
+  font-weight: 500;
+}
+.navbar .drop-list-shape .list li a img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+.navbar .drop-list-shape .list li a span {
+  color: var(--dark);
+  font-size: 15px;
+  font-weight: 500;
+}
+.navbar .drop-list-shape .list li a::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url("../images/navbar/check_circle.svg") center/contain no-repeat;
+  top: calc(50% - 12px);
+  right: 0px;
+  z-index: -1;
+  filter: var(--primary-filter);
+  transform: scale(0);
+  transition: all 0.3s linear;
+}
+.navbar .drop-list-shape .list li a:hover::after, .navbar .drop-list-shape .list li a.active::after {
+  transform: scale(1);
+}
+.navbar .drop-list-shape .list .name {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.navbar .drop-list-shape .list .name::after {
+  display: none;
+}
+.navbar .drop-list-shape .list .name .image-content img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.navbar .drop-list-shape .list .name .contain {
+  width: calc(100% - 60px);
+}
+.navbar .drop-list-shape .list .name .contain a {
+  font-size: 12px;
+}
+.navbar .drop-list-shape .list .name .contain a::after {
+  display: none;
+}
+.navbar .drop-list-shape .list .name h1 {
+  color: var(--dark-color);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0px;
+}
+.navbar .drop-list-shape .list .name h2 {
+  color: var(--primary-color);
+  font-size: 17px;
+  font-weight: 500;
+  margin: 4px 0px;
+}
+.navbar .drop-list-shape:hover .list {
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
 .navbar .login-list {
   display: flex;
   align-items: center;
@@ -1808,6 +1927,19 @@ html[dir=rtl] .selling .selling-list li a::before {
   font-size: 15px;
   font-weight: 500;
 }
+.modal-body .region-data li a img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-margin-end: 10px;
+          margin-inline-end: 10px;
+}
+.modal-body .region-data li a span {
+  color: var(--dark-color);
+  font-size: 15px;
+  font-weight: 500;
+}
 .modal-body .region-data li a::after {
   content: "";
   position: absolute;
@@ -1823,6 +1955,47 @@ html[dir=rtl] .selling .selling-list li a::before {
 }
 .modal-body .region-data li a:hover::after, .modal-body .region-data li a.active::after {
   transform: scale(1);
+}
+.modal-body .region-data .name {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.modal-body .region-data .name::after {
+  display: none;
+}
+.modal-body .region-data .name .image-content img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.modal-body .region-data .name .contain {
+  width: calc(100% - 60px) !important;
+  display: block;
+}
+.modal-body .region-data .name .contain a {
+  font-size: 12px;
+}
+.modal-body .region-data .name .contain a::after {
+  display: none;
+}
+.modal-body .region-data .name h1 {
+  color: var(--dark-color);
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0px;
+}
+.modal-body .region-data .name h2 {
+  color: var(--primary-color);
+  font-size: 17px;
+  font-weight: 500;
+  margin: 4px 0px;
 }
 .modal-body .contain {
   width: 100%;
