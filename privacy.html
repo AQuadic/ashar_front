@@ -11,18 +11,25 @@
     <link rel="shortcut icon" href="assets/images/logo/logo.png" type="image/x-icon"/>
     <link rel="stylesheet" href="assets/css/lib/all.min.css">
     <link rel="stylesheet" href="assets/css/lib/animate.css">
-    <link rel="stylesheet" href="assets/css/lib/bootstrap.css" />
-        <script>
+    <link id="ltr-lang" rel="stylesheet" href="assets/css/lib/bootstrap.css" />
+    <script>
         function switchLang() {
             if (document.dir == 'ltr') {
                 const link = document.createElement('link');
                 link.setAttribute('href', 'assets/css/lib/bootstrap-rtl.min.css');
                 link.setAttribute('id', 'rtl-lang');
-                document.body.appendChild(link);
+                link.setAttribute('rel', 'stylesheet');
+                document.head.appendChild(link);
+                document.getElementById('ltr-lang').remove();
                 document.dir = 'rtl';
             } else {
-                document.getElementById('rtl-lang').remove();
-                document.dir = 'ltr';
+              const link = document.createElement('link');
+              link.setAttribute('href', 'assets/css/lib/bootstrap.css');
+              link.setAttribute('id', 'ltr-lang');
+              link.setAttribute('rel', 'stylesheet');
+              document.head.appendChild(link);
+              document.getElementById('rtl-lang').remove();
+              document.dir = 'ltr';
             }
         }
     </script>
