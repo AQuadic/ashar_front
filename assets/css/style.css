@@ -1153,6 +1153,10 @@ html[dir=rtl] .selling .selling-list li a::before {
   right: unset !important;
   left: 10px !important;
 }
+html[dir=rtl] .navbar .top-nav .content .flex-data .search-box .drop-list-shape .drop-name::after {
+  right: unset !important;
+  left: 10px !important;
+}
 
 .custom-btn {
   width: 140px;
@@ -1421,7 +1425,7 @@ html[dir=rtl] .selling .selling-list li a::before {
   padding: 0px 10px;
 }
 .navbar .top-nav .content .flex-data .search-box .drop-list-shape .drop-name::after {
-  right: 10px;
+  right: 10px !important;
 }
 .navbar .top-nav .content .flex-data .search-box .drop-list-shape .drop-name span {
   color: var(--primary-color) !important;
