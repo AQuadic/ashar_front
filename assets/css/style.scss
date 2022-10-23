@@ -20,7 +20,7 @@ button {
 }
 
 html[dir="rtl"] {
-  .drop-name::after,
+  .bottom-nav .drop-name::after,
   .modal-body .region-data li a::after,
   .navbar .drop-list-shape .list li a::after,
   .drop-list-shape .list .item a::after {
@@ -28,6 +28,13 @@ html[dir="rtl"] {
     right: unset !important;
   }
 
+  .modal-body .drop-list-shape .list {
+    right: 0px;
+    left: unset !important;
+  }
+
+  .modal-body .search-box .drop-list-shape .drop-name::after,
+  .top-nav .drop-name::after,
   .navbar .top-nav .content .flex-data .drop-list-shape.data .drop-name::after {
     right: unset !important;
     left: 10px !important;

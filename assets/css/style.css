@@ -1126,13 +1126,19 @@ button:hover, button:focus, button:active {
   outline: none;
 }
 
-html[dir=rtl] .drop-name::after,
+html[dir=rtl] .bottom-nav .drop-name::after,
 html[dir=rtl] .modal-body .region-data li a::after,
 html[dir=rtl] .navbar .drop-list-shape .list li a::after,
 html[dir=rtl] .drop-list-shape .list .item a::after {
   left: 0px;
   right: unset !important;
 }
+html[dir=rtl] .modal-body .drop-list-shape .list {
+  right: 0px;
+  left: unset !important;
+}
+html[dir=rtl] .modal-body .search-box .drop-list-shape .drop-name::after,
+html[dir=rtl] .top-nav .drop-name::after,
 html[dir=rtl] .navbar .top-nav .content .flex-data .drop-list-shape.data .drop-name::after {
   right: unset !important;
   left: 10px !important;
