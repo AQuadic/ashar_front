@@ -1355,6 +1355,11 @@ html[dir="rtl"] .drop-list-shape .list .item a::after {
   left: 0px;
   right: unset !important;
 }
+html[dir="rtl"]   main
+.flex-data .drop-list-shape .list li a::after{
+  left: 0px;
+  right: unset !important;
+}
 html[dir="rtl"] .modal-body .drop-list-shape .list {
   right: 0px;
   left: unset !important;
@@ -1371,6 +1376,14 @@ html[dir="rtl"]
   right: unset !important;
   left: 10px !important;
 }
+html[dir="rtl"]
+  main
+  .flex-data
+  .drop-list-shape.data
+  .drop-name::after {
+  right: unset !important;
+  left: 10px !important;
+}
 html[dir="rtl"] .product-box .image-content .fav-btn,
 html[dir="rtl"] .ads .upload-image .close,
 html[dir="rtl"] .ads .form-contain .form-group .form-select::after {
@@ -1379,6 +1392,10 @@ html[dir="rtl"] .ads .form-contain .form-group .form-select::after {
 }
 html[dir="rtl"] .selling .selling-list li a::after,
 html[dir="rtl"] .navbar .drop-list-shape .list {
+  left: unset !important;
+  right: 0px !important;
+}
+html[dir="rtl"] main .banner .drop-list-shape .list {
   left: unset !important;
   right: 0px !important;
 }
@@ -1398,7 +1415,12 @@ html[dir="rtl"]
   right: unset !important;
   left: 10px !important;
 }
-
+html[dir="rtl"] main .search-box
+.drop-list-shape
+.drop-name::after {
+right: unset !important;
+left: 10px !important;
+}
 .custom-btn {
   width: 140px;
   height: 40px;
@@ -1634,8 +1656,17 @@ html[dir="rtl"]
   display: flex;
   align-items: center;
   align-content: center;
+  flex: 1;
 }
 .navbar .top-nav .content .flex-data .drop-list-shape.data .drop-name {
+  width: 128px;
+  height: 40px;
+  -webkit-padding-start: 10px;
+  padding-inline-start: 10px;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+main .flex-data .drop-list-shape.data .drop-name {
   width: 128px;
   height: 40px;
   -webkit-padding-start: 10px;
@@ -1646,7 +1677,13 @@ html[dir="rtl"]
 .navbar .top-nav .content .flex-data .drop-list-shape.data .drop-name span {
   color: var(--dark-color);
 }
+main .flex-data .drop-list-shape.data .drop-name span {
+  color: var(--dark-color);
+}
 .navbar .top-nav .content .flex-data .drop-list-shape.data .drop-name::after {
+  right: 10px !important;
+}
+main .flex-data .drop-list-shape.data .drop-name::after {
   right: 10px !important;
 }
 .navbar .top-nav .content .flex-data .search-box {
@@ -1661,6 +1698,30 @@ html[dir="rtl"]
   -webkit-margin-start: 20px;
   margin-inline-start: 20px;
 }
+main header.banner{
+  padding: 0;
+  background: var(--light-color);
+}
+main .flex-data .search-box {
+  width: 74%;
+  height: 48px;
+  position: relative;
+  border: 1px solid var(--primary-color);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  -webkit-margin-start: 20px;
+  margin-inline-start: 20px;
+  margin: 20px auto;
+}
+html[dir=ltr] main .flex-data .search-box {
+  border-radius: 10px 0px 0px 10px;
+
+}
+html[dir=rtl] main .flex-data .search-box {
+  border-radius: 0px 10px 10px 0px;
+
+}
 .navbar .top-nav .content .flex-data .search-box .drop-list-shape .drop-name {
   background-color: rgba(241, 89, 33, 0.4) !important;
   border-right: 1px solid var(--primary-color);
@@ -1668,6 +1729,23 @@ html[dir="rtl"]
   height: 40px !important;
   border-radius: 10px;
   padding: 0px 10px;
+}
+main .flex-data .search-box .drop-list-shape .drop-name {
+  background-color: #f159211a !important;
+  
+  width: 140px !important;
+  height: 46px !important;
+  
+  padding: 0px 10px;
+}
+html[dir=ltr] main .flex-data .search-box .drop-list-shape .drop-name{
+  border-radius: 10px 0px 0px 10px;
+  border-right: 3px solid var(--primary-color);
+}
+html[dir=rtl] main .flex-data .search-box .drop-list-shape .drop-name{
+  border-radius: 0px 10px 10px 0px;
+  border-left: 3px solid var(--primary-color);
+
 }
 .navbar
   .top-nav
@@ -1677,6 +1755,11 @@ html[dir="rtl"]
   .drop-list-shape
   .drop-name::after {
   right: 10px !important;
+}
+main .flex-data .search-box
+.drop-list-shape
+.drop-name::after {
+right: 10px !important;
 }
 .navbar
   .top-nav
@@ -1688,7 +1771,23 @@ html[dir="rtl"]
   span {
   color: var(--primary-color) !important;
 }
+main  .flex-data
+.search-box
+.drop-list-shape
+.drop-name
+span {
+color: var(--primary-color) !important;
+}
 .navbar .top-nav .content .flex-data .search-box .form-control {
+  width: 100% !important;
+  background-color: var(--light-color) !important;
+  color: var(--dark-color);
+  font-size: 15px;
+  font-weight: 500;
+  border: 0px;
+  height: 100% !important;
+}
+main .flex-data .search-box .form-control {
   width: 100% !important;
   background-color: var(--light-color) !important;
   color: var(--dark-color);
@@ -1707,6 +1806,13 @@ html[dir="rtl"]
   font-size: 15px;
   font-weight: 500;
 }
+main .flex-data
+.search-box
+.form-control::-moz-placeholder {
+color: #ddd;
+font-size: 15px;
+font-weight: 500;
+}
 .navbar
   .top-nav
   .content
@@ -1717,7 +1823,19 @@ html[dir="rtl"]
   font-size: 15px;
   font-weight: 500;
 }
+main  .flex-data
+.search-box
+.form-control:-ms-input-placeholder {
+color: #ddd;
+font-size: 15px;
+font-weight: 500;
+}
 .navbar .top-nav .content .flex-data .search-box .form-control::placeholder {
+  color: #ddd;
+  font-size: 15px;
+  font-weight: 500;
+}
+main .flex-data .search-box .form-control::placeholder {
   color: #ddd;
   font-size: 15px;
   font-weight: 500;
@@ -1733,6 +1851,23 @@ html[dir="rtl"]
   border-radius: 10px;
   padding: 0px !important;
 }
+main .flex-data .search-box .search-btn {
+  width: 58px !important;
+  height: 46px !important;
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  
+  padding: 0px !important;
+}
+html[dir=ltr] main .flex-data .search-box .search-btn{
+  border-radius: 10px 0px 0px 10px;
+}
+html[dir=rtl] main .flex-data .search-box .search-btn{
+  border-radius: 0px 10px 10px 0px;
+}
 .navbar .top-nav .content .flex-data .search-box .search-btn img {
   width: 50%;
   height: 50%;
@@ -1740,7 +1875,17 @@ html[dir="rtl"]
   object-fit: contain;
   transition: all 0.3s linear;
 }
+main .flex-data .search-box .search-btn img {
+  width: 40%;
+  height: 40%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  transition: all 0.3s linear;
+}
 .navbar .top-nav .content .flex-data .search-box .search-btn:hover img {
+  transform: rotate(20deg);
+}
+main .flex-data .search-box .search-btn:hover img {
   transform: rotate(20deg);
 }
 .navbar .top-nav .content .lang-contain {
@@ -1762,10 +1907,48 @@ html[dir="rtl"]
 .navbar .drop-list-shape {
   position: relative;
 }
+main .banner .img_banner{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  margin: auto;
+  max-width: 1280px;
+  margin-top: 26px;
+}
+main .banner .img_banner img{
+  max-width: 48%;
+}
+main .banner .drop-list-shape {
+  position: relative;
+}
+@media(max-width:992px){
+  main .flex-data .search-box{
+    display: none;
+  }
+  main .banner .img_banner{
+    display: none;
+  }
+}
+
+
 .navbar .drop-list-shape.user-list .list {
   width: 280px;
 }
 .navbar .drop-list-shape .list {
+  padding: 10px 10px;
+  background-color: var(--light);
+  box-shadow: 0px 0px 10px rgba(241, 89, 33, 0.2);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(20px);
+  visibility: hidden;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+main .banner .drop-list-shape .list {
   padding: 10px 10px;
   background-color: var(--light);
   box-shadow: 0px 0px 10px rgba(241, 89, 33, 0.2);
@@ -1783,10 +1966,26 @@ html[dir="rtl"]
   padding: 10px 0px;
   border-bottom: 1px solid var(--seconday-color);
 }
+main .banner .drop-list-shape .list li {
+  width: 100%;
+  padding: 10px 0px;
+  border-bottom: 1px solid var(--seconday-color);
+}
 .navbar .drop-list-shape .list li:last-child {
   border-bottom: 0px !important;
 }
+main .banner .drop-list-shape .list li:last-child {
+  border-bottom: 0px !important;
+}
 .navbar .drop-list-shape .list li a {
+  width: 100%;
+  display: flex !important;
+  position: relative;
+  color: var(--dark);
+  font-size: 15px;
+  font-weight: 500;
+}
+main .banner .drop-list-shape .list li a {
   width: 100%;
   display: flex !important;
   position: relative;
@@ -1802,7 +2001,20 @@ html[dir="rtl"]
   -webkit-margin-end: 10px;
   margin-inline-end: 10px;
 }
+main .banner .drop-list-shape .list li a img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-margin-end: 10px;
+  margin-inline-end: 10px;
+}
 .navbar .drop-list-shape .list li a span {
+  color: var(--dark);
+  font-size: 15px;
+  font-weight: 500;
+}
+main .banner .drop-list-shape .list li a span {
   color: var(--dark);
   font-size: 15px;
   font-weight: 500;
@@ -1820,8 +2032,25 @@ html[dir="rtl"]
   transform: scale(0);
   transition: all 0.3s linear;
 }
+main .banner .drop-list-shape .list li a::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url("../images/navbar/check_circle.svg") center/contain no-repeat;
+  top: calc(50% - 12px);
+  right: 0px;
+  z-index: -1;
+  filter: var(--primary-filter);
+  transform: scale(0);
+  transition: all 0.3s linear;
+}
 .navbar .drop-list-shape .list li a:hover::after,
 .navbar .drop-list-shape .list li a.active::after {
+  transform: scale(1);
+}
+main .banner  .drop-list-shape .list li a:hover::after,
+main .banner  .drop-list-shape .list li a.active::after {
   transform: scale(1);
 }
 .navbar .drop-list-shape .list .name {
@@ -1831,7 +2060,17 @@ html[dir="rtl"]
   width: 100%;
   justify-content: space-between;
 }
+main .banner .drop-list-shape .list .name {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  justify-content: space-between;
+}
 .navbar .drop-list-shape .list .name::after {
+  display: none;
+}
+main .banner .drop-list-shape .list .name::after {
   display: none;
 }
 .navbar .drop-list-shape .list .name .image-content img {
@@ -1843,7 +2082,19 @@ html[dir="rtl"]
   -o-object-fit: cover;
   object-fit: cover;
 }
-.navbar .drop-list-shape .list .name .contain {
+main .banner  .drop-list-shape .list .name .image-content img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  -o-object-position: center;
+  object-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+main .banner  .navbar .drop-list-shape .list .name .contain {
+  width: calc(100% - 60px);
+}
+.drop-list-shape .list .name .contain {
   width: calc(100% - 60px);
 }
 .navbar .drop-list-shape .list .name .contain a {
@@ -1923,7 +2174,24 @@ html[dir="rtl"]
   -webkit-padding-end: 30px;
   padding-inline-end: 30px;
 }
+main .banner .drop-list-shape .drop-name {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  z-index: 9;
+  -webkit-padding-end: 30px;
+  padding-inline-end: 30px;
+}
 .navbar .drop-list-shape .drop-name img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -webkit-margin-end: 5px;
+  margin-inline-end: 5px;
+}
+main .banner  .drop-list-shape .drop-name img {
   width: 20px;
   height: 20px;
   -o-object-fit: contain;
@@ -1934,6 +2202,11 @@ html[dir="rtl"]
 .navbar .drop-list-shape .drop-name span {
   color: var(--primary-color);
   font-size: 16px;
+  font-weight: 500;
+}
+main .banner .drop-list-shape .drop-name span {
+  color: var(--primary-color);
+  font-size: 12px;
   font-weight: 500;
 }
 .navbar .drop-list-shape .drop-name::after {
@@ -1947,7 +2220,33 @@ html[dir="rtl"]
   z-index: -1;
   transition: all 0.3s linear;
 }
+main .banner .drop-list-shape .drop-name::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url("../images/navbar/arrow.svg") center/contain no-repeat;
+  top: calc(50% - 9px);
+  right: 0px;
+  z-index: -1;
+  transition: all 0.3s linear;
+}
 .navbar .drop-list-shape .list {
+  width: 200px;
+  padding: 10px 10px;
+  background-color: var(--light-color);
+  box-shadow: 0px 0px 10px rgba(241, 89, 33, 0.2);
+  position: absolute;
+  z-index: 999;
+  top: 100%;
+  left: 0;
+  transform: translateY(20px);
+  visibility: hidden;
+  border-radius: 10px;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+main .banner .drop-list-shape .list {
   width: 200px;
   padding: 10px 10px;
   background-color: var(--light-color);
@@ -2000,7 +2299,15 @@ html[dir="rtl"]
   opacity: 1;
   visibility: visible;
 }
+main .banner .drop-list-shape:hover .list {
+  transform: translateY(0px);
+  opacity: 1;
+  visibility: visible;
+}
 .navbar .drop-list-shape:hover .drop-name::after {
+  transform: rotate(180deg);
+}
+main .banner  .drop-list-shape:hover .drop-name::after {
   transform: rotate(180deg);
 }
 .navbar .bottom-nav {
