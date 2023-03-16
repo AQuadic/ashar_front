@@ -1328,14 +1328,18 @@ button {
   }
 }
 :root {
-  --primary-color: #f15921;
+  
+  color: #0DCB24;
+
+color: #0387B2;
+  --primary-color: #0387B2;
   --seconday-color: #f3f3f3;
   --light-color: #fff;
   --dark-color: #000;
-  --primary-filter: invert(44%) sepia(36%) saturate(4313%) hue-rotate(349deg)
-    brightness(97%) contrast(94%);
+  --primary-filter: invert(33%) sepia(94%) saturate(2032%) hue-rotate(170deg) brightness(89%) contrast(98%);
   --light-filter: invert(100%) sepia(0%) saturate(7445%) hue-rotate(134deg)
     brightness(121%) contrast(112%);
+    --seconday-filte:invert(16%) sepia(107%) saturate(2052%) hue-rotate(193deg) brightness(94%) contrast(226%);
 }
 
 button {
@@ -1530,6 +1534,7 @@ left: 10px !important;
   width: 50%;
   height: 50%;
   -o-object-fit: contain;
+  filter: var(--primary-filter);
   object-fit: contain;
 }
 .product-box .image-content .fav-btn:hover img {
@@ -1574,6 +1579,7 @@ left: 10px !important;
   object-fit: contain;
   -webkit-margin-end: 10px;
   margin-inline-end: 10px;
+  filter: var(--primary-filter);
 }
 .product-box .content .flex-data .location span {
   color: var(--dark-color);
@@ -1726,7 +1732,7 @@ html[dir=rtl] main .flex-data .search-box {
 
 }
 .navbar .top-nav .content .flex-data .search-box .drop-list-shape .drop-name {
-  background-color: rgba(241, 89, 33, 0.4) !important;
+  background-color: rgba(3, 135, 178, 0.4) !important;
   border-right: 1px solid var(--primary-color);
   width: 140px !important;
   height: 40px !important;
@@ -1734,7 +1740,7 @@ html[dir=rtl] main .flex-data .search-box {
   padding: 0px 10px;
 }
 main .flex-data .search-box .drop-list-shape .drop-name {
-  background-color: #f159211a !important;
+  background-color: rgba(3, 135, 178, 0.3) !important;
   
   width: 140px !important;
   height: 46px !important;
@@ -1941,7 +1947,7 @@ main .banner .drop-list-shape {
 .navbar .drop-list-shape .list {
   padding: 10px 10px;
   background-color: var(--light);
-  box-shadow: 0px 0px 10px rgba(241, 89, 33, 0.2);
+  box-shadow: 0px 0px 10px rgba(3,135,178, 0.2);
   position: absolute;
   top: 100%;
   left: 0;
@@ -1954,7 +1960,7 @@ main .banner .drop-list-shape {
 main .banner .drop-list-shape .list {
   padding: 10px 10px;
   background-color: var(--light);
-  box-shadow: 0px 0px 10px rgba(241, 89, 33, 0.2);
+  box-shadow: 0px 0px 10px rgba(3,135,178, 0.2);
   position: absolute;
   top: 100%;
   left: 0;
@@ -2133,6 +2139,9 @@ main .banner  .navbar .drop-list-shape .list .name .contain {
   -webkit-margin-end: 10px;
   margin-inline-end: 10px;
 }
+.navbar .login-list li:first-of-type img {
+  filter: var(--primary-filter);
+}
 .navbar .login-list li:last-child {
   -webkit-margin-end: 0px;
   margin-inline-end: 0px;
@@ -2147,6 +2156,7 @@ main .banner  .navbar .drop-list-shape .list .name .contain {
   height: 100%;
   -o-object-fit: contain;
   object-fit: contain;
+
 }
 .navbar .login-list li a img.user {
   border-radius: 50%;
@@ -2193,6 +2203,7 @@ main .banner .drop-list-shape .drop-name {
   object-fit: contain;
   -webkit-margin-end: 5px;
   margin-inline-end: 5px;
+  filter: var(--primary-filter);
 }
 main .banner  .drop-list-shape .drop-name img {
   width: 20px;
@@ -2220,6 +2231,7 @@ main .banner .drop-list-shape .drop-name span {
   background: url("../images/navbar/arrow.svg") center/contain no-repeat;
   top: calc(50% - 9px);
   right: 0px;
+  filter: var(--primary-filter);
   z-index: -1;
   transition: all 0.3s linear;
 }
@@ -2233,12 +2245,14 @@ main .banner .drop-list-shape .drop-name::after {
   right: 0px;
   z-index: -1;
   transition: all 0.3s linear;
+  filter: var(--primary-filter);
+  
 }
 .navbar .drop-list-shape .list {
   width: 200px;
   padding: 10px 10px;
   background-color: var(--light-color);
-  box-shadow: 0px 0px 10px rgba(241, 89, 33, 0.2);
+  box-shadow: 0px 0px 10px rgba(3,135,178, 0.2);
   position: absolute;
   z-index: 999;
   top: 100%;
@@ -2253,7 +2267,7 @@ main .banner .drop-list-shape .list {
   width: 200px;
   padding: 10px 10px;
   background-color: var(--light-color);
-  box-shadow: 0px 0px 10px rgba(241, 89, 33, 0.2);
+  box-shadow: 0px 0px 10px rgba(3,135,178, 0.2);
   position: absolute;
   z-index: 999;
   top: 100%;
@@ -2344,7 +2358,7 @@ main .banner  .drop-list-shape:hover .drop-name::after {
   align-content: center;
 }
 .modal-body .search-box .drop-list-shape .drop-name {
-  background-color: rgba(241, 89, 33, 0.4) !important;
+  background-color: rgba(3,135,178, 0.4) !important;
   border-right: 1px solid var(--primary-color);
   width: 140px !important;
   height: 40px !important;
@@ -2442,7 +2456,7 @@ main .banner  .drop-list-shape:hover .drop-name::after {
   width: 200px;
   padding: 10px 10px;
   background-color: var(--light-color);
-  box-shadow: 0px 0px 10px rgba(241, 89, 33, 0.2);
+  box-shadow: 0px 0px 10px rgba(3,135,178, 0.2);
   position: absolute;
   top: 100%;
   left: 0;
@@ -2644,7 +2658,7 @@ main .banner  .drop-list-shape:hover .drop-name::after {
   align-items: center;
   justify-content: center;
   border-radius: 4px;
-  background-color: rgba(241, 89, 33, 0.8);
+  background-color: rgba(3,135,178, 0.8);
 }
 .mobile-nav li a img {
   width: 16px;
@@ -2965,6 +2979,7 @@ font-weight: 400;
   z-index: -1;
   top: 0;
   right: 0;
+  filter: var(--primary-filter);
 }
 .screen .image-content::after {
   background: url("../images/intro/intro_pattern.svg") top right/80% 80%
@@ -3000,6 +3015,7 @@ font-weight: 400;
   -o-object-fit: contain;
   object-fit: contain;
   margin-bottom: 20px;
+  filter: var(--primary-filter);
 }
 .notification .notification-image h1 {
   color: var(--primary-color);
@@ -3080,7 +3096,7 @@ font-weight: 400;
 .login-page .form-contain .login-head {
   width: 100%;
   padding: 20px 0px;
-  background-color: rgba(241, 89, 33, 0.1);
+  background-color: rgba(3, 135, 178, 0.1);
   text-align: center;
   margin-bottom: 40px;
 }
@@ -3105,7 +3121,7 @@ font-weight: 400;
   margin: 0px auto 30px;
 }
 .login-page .form-contain .flex-number input {
-  border: 1px solid rgba(241, 89, 33, 0.5);
+  border: 1px solid rgba(3, 135, 178, 0.5);
   border-radius: 10px;
   text-align: center;
   color: var(--dark-color);
@@ -3250,6 +3266,7 @@ font-weight: 400;
   object-fit: contain;
   -webkit-margin-end: 10px;
   margin-inline-end: 10px;
+  filter: var(--seconday-filte);
 }
 .selling .selling-list li a span {
   color: var(--dark-color);
@@ -3261,7 +3278,7 @@ font-weight: 400;
   position: absolute;
   width: 0%;
   height: 100%;
-  background-color: rgba(241, 89, 33, 0.2);
+  background-color: rgba(3,135,178, 0.2);
   top: 0;
   left: 0;
   z-index: -1;
@@ -3276,6 +3293,7 @@ font-weight: 400;
   transform: rotate(-90deg);
   top: calc(50% - 12px);
   right: 10px;
+  filter: var(--primary-filter);
 }
 .selling .selling-list li a:hover::after,
 .selling .selling-list li a.active::after {
@@ -3299,7 +3317,7 @@ font-weight: 400;
 .selling .sellect-box {
   width: 100%;
   padding: 25px 15px;
-  background-color: rgba(241, 89, 33, 0.1);
+  background-color: rgba(3,135,178, 0.1);
   border-radius: 15px;
 }
 .selling .sellect-box .heading {
@@ -3428,7 +3446,7 @@ font-weight: 400;
 .ads .upload-image {
   width: 100%;
   height: 150px;
-  border: 2px solid rgba(241, 89, 33, 0.5);
+  border: 2px solid rgba(3,135, 178, 0.5);
   border-radius: 10px;
   cursor: pointer;
   background-size: contain;
@@ -3564,7 +3582,7 @@ font-weight: 400;
 .single-project .data-contain .head {
   width: 100%;
   padding: 15px 20px;
-  background-color: rgba(241, 89, 33, 0.16);
+  background-color: rgba(3, 135, 178, 0.16);
 }
 .single-project .data-contain .head h1 {
   color: var(--dark-color);
@@ -3654,6 +3672,7 @@ font-weight: 400;
   height: 24px;
   -o-object-fit: contain;
   object-fit: contain;
+  filter: var(--primary-filter);
 }
 .single-project .box .flex-data .links li a img:hover {
   -webkit-animation: tada 0.3s linear;
@@ -3671,6 +3690,8 @@ font-weight: 400;
   object-fit: contain;
   -webkit-margin-end: 10px;
   margin-inline-end: 10px;
+  filter: var(--primary-filter);
+
 }
 .single-project .box .see-more span {
   color: var(--dark-color);
@@ -3749,6 +3770,62 @@ font-weight: 400;
 .swiper-contain .products-swiper {
   overflow: hidden;
   padding: 20px 0px 40px 0px;
+}
+.swiper-contain .blogs-swiper {
+  overflow: hidden;
+  padding: 20px 0px 40px 0px;
+}
+.blogs-box {
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+  
+  overflow: hidden;
+ 
+}
+.blogs-box .image-content{
+margin-bottom: 24px;
+}
+.blogs-box .image-content img{
+  width: 100%;
+  height: 292px;
+  object-fit: cover;
+}
+.blogs-box .content a {
+  color: #0387B2;
+  width: 114px;
+  height: 32px;
+  border: 1px solid #0387B2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.blogs-box .content {
+  padding: 0px 0px 16px;
+}
+.blogs-box .content h3{
+  font-size: 24px;
+
+}
+.blogs-box .content h4{
+  font-size: 14px;
+  color: #8F8F8F;
+  margin-bottom: 12px;
+  font-weight: 400;
+}
+.blogs-box .content p{
+  color: #5C5C5C;
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.swiper-contain .blogs-swiper .swiper-pagination span {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: var(--primary-color) !important;
+  opacity: 1 !important;
 }
 .swiper-contain .products-swiper .swiper-pagination span {
   width: 10px !important;
@@ -4017,6 +4094,7 @@ footer .content .links li a:hover {
   left: 50%;
   transform: translate(-50%, -50%);
   background: url(../images/intro/ntro_pattern5.svg) no-repeat;
+  filter: var(--primary-filter);
 }
 .donate .part2 button {
   width: 400px;
@@ -4035,7 +4113,7 @@ footer .content .links li a:hover {
   display: block;
   margin-bottom: 0.5rem;
   font-size: 16px;
-  color: #f15921;
+  color: var(--primary-color);
   font-weight: bold;
 }
 .donate .part2 .form input {

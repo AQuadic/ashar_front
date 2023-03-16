@@ -83,6 +83,30 @@ $(document).ready(function () {
         },
     });
 
+
+    var swiper = new Swiper('.blogs-swiper', {
+        loop: true,
+        speed: 900,
+        spaceBetween: 15,
+        autoplay: {
+            delay: 2500,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            dynamicBullets: true,
+        },
+        breakpoints: {
+            0:{
+                slidesPerView: 1,
+            },
+            700:{
+                slidesPerView: 1,
+            },
+            1050:{
+                slidesPerView: 3,
+            }
+        }
+    });
     // const image_Input = document.querySelector('.file-upload');
     // var ulpoadedImage = "";
     // image_Input.addEventListener("change", function() {
