@@ -2451,6 +2451,7 @@ main .banner  .drop-list-shape:hover .drop-name::after {
   right: 0px;
   z-index: -1;
   transition: all 0.3s linear;
+  filter: var(--primary-filter);
 }
 .modal-body .drop-list-shape .list {
   width: 200px;
