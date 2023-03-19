@@ -1337,6 +1337,7 @@ color: #0387B2;
   --light-color: #fff;
   --dark-color: #000;
   --primary-filter: invert(33%) sepia(94%) saturate(2032%) hue-rotate(170deg) brightness(89%) contrast(98%);
+  --primary2-filter:invert(55%) sepia(76%) saturate(2609%) hue-rotate(88deg) brightness(105%) contrast(92%);
   --light-filter: invert(100%) sepia(0%) saturate(7445%) hue-rotate(134deg)
     brightness(121%) contrast(112%);
     --seconday-filte:invert(16%) sepia(107%) saturate(2052%) hue-rotate(193deg) brightness(94%) contrast(226%);
@@ -2980,15 +2981,18 @@ font-weight: 400;
   z-index: -1;
   top: 0;
   right: 0;
-  filter: var(--primary-filter);
 }
 .screen .image-content::after {
   background: url("../images/intro/intro_pattern.svg") top right/80% 80%
     no-repeat;
+  filter: var(--primary2-filter);
+    
 }
 .screen .image-content::before {
   background: url("../images/intro/intro_pattern.svg") bottom left/80% 80%
     no-repeat;
+  filter: var(--primary-filter);
+
 }
 .screen .image-content img {
   width: 100%;
